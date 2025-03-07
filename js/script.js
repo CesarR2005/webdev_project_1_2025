@@ -45,3 +45,32 @@ function updateCountdown() {
 }
 
 updateCountdown();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("signup-form");
+  const progressBar = document.getElementById("signup-progress");
+  const inputs = form.querySelectorAll("input");
+
+  // Function to update progress bar based on filled fields
+  function updateProgress() {
+    let completedFields = 0;
+
+    inputs.forEach(input => {
+      // Increment completedFields if the input is not empty
+      if (input.value.trim() !== "") {
+        completedFields++;
+      }
+    });
+
+    // Calculate percentage of completed fields
+    const progress = (completedFields / inputs.length) * 100;
+
+    // Update the progress bar value
+    progressBar.value = progress;
+  }
+
+  // Add event listeners to each input field to call updateProgress on input changes
+  inputs.forEach(input => {
+    input.addEventListener("input", updateProgress);
+  });
+});

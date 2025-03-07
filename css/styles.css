@@ -30,16 +30,16 @@ h1 {
 
 @keyframes colorChange {
   0% {
-    color: #b19cd9; /* Light purple */
+    color: #b19cd9; 
   }
   33% {
-    color: #b362c7; /* Medium purple */
+    color: #b362c7; 
   }
   66% {
-    color: #832db1; /* Dark purple */
+    color: #832db1; 
   }
   100% {
-    color: #b19cd9; /* Back to light purple */
+    color: #b19cd9; 
   }
 }
 
@@ -120,6 +120,24 @@ input:focus {
   outline: none;
 }
 
+progress {
+  width: 100%;  /* Full width */
+  height: 20px;  /* Height of the bar */
+  margin-top: 20px;  /* Space between the form elements */
+  border-radius: 10px;
+  background-color: #4b0082;  /* Background color of the bar */
+  border: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #2a004f;  /* Background of the progress bar container */
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #8000ff;  /* Color of the progress value */
+  border-radius: 10px;
+}
 
 button {
   width: 100%;
