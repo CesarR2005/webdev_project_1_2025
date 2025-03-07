@@ -50,26 +50,45 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("signup-form");
   const progressBar = document.getElementById("signup-progress");
   const inputs = form.querySelectorAll("input");
+  const confirmationMessage = document.getElementById("confirmation-message");
 
-  // Function to update progress bar based on filled fields
+  // This code updates the progress bar based on filled fields
   function updateProgress() {
     let completedFields = 0;
 
     inputs.forEach(input => {
-      // Increment completedFields if the input is not empty
       if (input.value.trim() !== "") {
         completedFields++;
       }
     });
 
-    // Calculate percentage of completed fields
     const progress = (completedFields / inputs.length) * 100;
 
-    // Update the progress bar value
+    // This code update the progress bar value
     progressBar.value = progress;
   }
 
-  // Add event listeners to each input field to call updateProgress on input changes
+  
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+  
+    let allFieldsFilled = true;
+    inputs.forEach(input => {
+      if (input.hasAttribute("required") && input.value.trim() === "") {
+        allFieldsFilled = false;
+      }
+    });
+
+    // This code verifires If all required fields are filled and show confirmation message
+    if (allFieldsFilled) {
+      form.style.display = "none";
+      confirmationMessage.style.display = "block";
+    } else {
+      alert("Please fill out all required fields.");
+    }
+  });
+
   inputs.forEach(input => {
     input.addEventListener("input", updateProgress);
   });
