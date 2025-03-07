@@ -66,7 +66,7 @@ input {
   background: #4b0082;
   color: #fff;
   border: 1px solid #b19cd9;
-  font-size: 0.5em;
+  font-size: 1em;
   text-align: center; 
   transition: border-color 0.3s ease;
 }
