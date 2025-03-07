@@ -21,7 +21,7 @@ header {
 h1 {
   font-size: 2rem;
   color: #b19cd9;
-  margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem;
 }
 
 main {
@@ -40,7 +40,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 15px rgba(177, 156, 217, 0.5);
+  box-shadow: 0 0 1rem rgba(177, 156, 217, 0.5);
 }
 
 #timer, #spots-left {
