@@ -1,5 +1,5 @@
-/* Styles */
 
+/* Styles */
 body {
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   background-color: #1a0033;
   color: #ffffff;
-  font-family: 'Press Start 2P' ,Arial, sans-serif;
+  font-family: 'Press Start 2P', Arial, sans-serif;
   padding: 20px;
   text-align: center;
 }
@@ -19,8 +19,9 @@ header {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2rem;
   color: #b19cd9;
+  margin-bottom: 2.5rem; 
 }
 
 main {
@@ -32,7 +33,7 @@ main {
 
 form {
   background: #2a004f;
-  padding: 25px;
+  padding: 2.5rem;
   border-radius: 10px;
   max-width: 400px;
   width: 90%;
@@ -43,35 +44,47 @@ form {
 }
 
 #timer, #spots-left {
-  font-size: 1.2em;
-  margin-top: 10px;
+  font-size: 1em;
+  margin-top: 0.5rem;
   color: #d4aaff;
 }
+
 
 label {
   align-self: flex-start;
   margin-top: 10px;
   font-weight: bold;
+  text-align: center; 
+  width: 100%;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
   background: #4b0082;
   color: #fff;
   border: 1px solid #b19cd9;
+  font-size: 0.5em;
+  text-align: center; 
+  transition: border-color 0.3s ease;
 }
+
+input:focus {
+  border-color: #8000ff;
+  outline: none;
+}
+
 
 button {
   width: 100%;
-  padding: 10px;
-  margin-top: 15px;
+  padding: 0.8rem;
+  margin-top: 2rem;
   background: #8000ff;
   color: white;
   font-size: 1em;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -81,7 +94,7 @@ button:hover {
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 0.9em;
   color: #bbb;
 }
@@ -91,10 +104,18 @@ footer {
   form {
       width: 70%;
   }
+
+  h1 {
+    font-size: 2.2em;
+  }
 }
 
 @media (min-width: 1024px) {
   form {
       width: 50%;
+  }
+
+  h1 {
+    font-size: 2.5em;
   }
 }
