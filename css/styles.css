@@ -9,7 +9,7 @@ body {
   background-color: #1a0033;
   color: #ffffff;
   font-family: 'Press Start 2P', Arial, sans-serif;
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -52,10 +52,12 @@ form {
 
 label {
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: 0.8rem;
   font-weight: bold;
   text-align: center; 
   width: 100%;
+  font-size: 0.9rem;
+  padding: 0.4rem;
 }
 
 input {
