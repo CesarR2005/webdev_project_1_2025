@@ -25,6 +25,7 @@ h1 {
   font-size: 2rem;
   color: #9d7fd4;
   margin-bottom: 2.5rem;
+  -webkit-text-stroke: 0.05rem black;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
 }
 
 form {
-  background: #2a004f;
+  background: #29024b;
   padding: 2.5rem;
   border-radius: 10px;
   max-width: 400px;
@@ -43,13 +44,13 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 1rem rgba(177, 156, 217, 0.5);
+  box-shadow: 0 0 1.5rem rgba(177, 156, 217, 0.5);
 }
 
 #timer, #spots-left {
   font-size: 1em;
   margin-top: 0.5rem;
-  color: #9d7fd4;
+  color: #af8cf2;
 }
 
 
@@ -102,6 +103,7 @@ footer {
   margin-top: 2rem;
   font-size: 0.9em;
   color: #e9e3e3;
+  -webkit-text-stroke: 0.01rem black;
 }
 
 /* Mobile Responsive Design */
