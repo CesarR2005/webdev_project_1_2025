@@ -23,9 +23,24 @@ header {
 
 h1 {
   font-size: 2rem;
-  color: #9d7fd4;
+  color: #b19cd9;
   margin-bottom: 2.5rem;
-  -webkit-text-stroke: 0.05rem black;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #b19cd9; /* Light purple */
+  }
+  33% {
+    color: #b362c7; /* Medium purple */
+  }
+  66% {
+    color: #832db1; /* Dark purple */
+  }
+  100% {
+    color: #b19cd9; /* Back to light purple */
+  }
 }
 
 main {
